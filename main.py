@@ -55,7 +55,7 @@ def hays():
 while True:
 	if num_items(Items.Wood) > 1 and num_items(Items.Hay) > 1 and num_items(Items.Carrot) < 600:
 		carrots()
-	elif num_items(Items.Hay) < 1:
+	elif num_items(Items.Hay) <= 1:
 		hays()
 	else:
 		woods()
