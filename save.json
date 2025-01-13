@@ -1,1 +1,70 @@
-{"items":{"serializeList":[{"name":"hay","nr":3177.0},{"name":"wood","nr":499.0}]},"dockedFiles":[],"minimizedFiles":["docs2"],"openFilePositions":[{"key":"main","value":{"x":200.00006103515626,"y":-150.00018310546876}},{"key":"docs0","value":{"x":-886.5623779296875,"y":314.06298828125}},{"key":"docs1","value":{"x":-786.25,"y":203.4375457763672}},{"key":"docs2","value":{"x":-580.9375,"y":414.37493896484377}}],"openFileSizes":[{"key":"main","value":{"x":500.0,"y":120.0}},{"key":"docs0","value":{"x":900.0,"y":700.0}},{"key":"docs1","value":{"x":900.0,"y":700.0}},{"key":"docs2","value":{"x":900.0,"y":700.0}}],"openDocPages":[{"key":"docs0","value":"docs/unlocks/plant.md"},{"key":"docs1","value":"docs/unlocks/expand_2.md"},{"key":"docs2","value":"docs/unlocks/carrots.md"}],"unlocks":["grass","soil","harvest","pass","do_a_flip","grassland","hay","straw_hat","while","true","false","break","continue","loops","can_harvest","if","else","elif","speed","move","north","south","east","west","expand_2","wood","bush","entities","clear","plant","for","range","get_world_size","carrots","carrot","till","can_trade","trade","items","carrot_seed"],"version":1}
+{
+  "items": {
+    "serializeList": [
+      { "name": "hay", "nr": 3177.0 },
+      { "name": "wood", "nr": 499.0 }
+    ]
+  },
+  "dockedFiles": [],
+  "minimizedFiles": ["docs2"],
+  "openFilePositions": [
+    { "key": "main", "value": { "x": 200.00006103515626, "y": -150.00018310546876 } },
+    { "key": "docs0", "value": { "x": -886.5623779296875, "y": 314.06298828125 } },
+    { "key": "docs1", "value": { "x": -786.25, "y": 203.4375457763672 } },
+    { "key": "docs2", "value": { "x": -580.9375, "y": 414.37493896484377 } }
+  ],
+  "openFileSizes": [
+    { "key": "main", "value": { "x": 500.0, "y": 120.0 } },
+    { "key": "docs0", "value": { "x": 900.0, "y": 700.0 } },
+    { "key": "docs1", "value": { "x": 900.0, "y": 700.0 } },
+    { "key": "docs2", "value": { "x": 900.0, "y": 700.0 } }
+  ],
+  "openDocPages": [
+    { "key": "docs0", "value": "docs/unlocks/plant.md" },
+    { "key": "docs1", "value": "docs/unlocks/expand_2.md" },
+    { "key": "docs2", "value": "docs/unlocks/carrots.md" }
+  ],
+  "unlocks": [
+    "grass",
+    "soil",
+    "harvest",
+    "pass",
+    "do_a_flip",
+    "grassland",
+    "hay",
+    "straw_hat",
+    "while",
+    "true",
+    "false",
+    "break",
+    "continue",
+    "loops",
+    "can_harvest",
+    "if",
+    "else",
+    "elif",
+    "speed",
+    "move",
+    "north",
+    "south",
+    "east",
+    "west",
+    "expand_2",
+    "wood",
+    "bush",
+    "entities",
+    "clear",
+    "plant",
+    "for",
+    "range",
+    "get_world_size",
+    "carrots",
+    "carrot",
+    "till",
+    "can_trade",
+    "trade",
+    "items",
+    "carrot_seed"
+  ],
+  "version": 1
+}
