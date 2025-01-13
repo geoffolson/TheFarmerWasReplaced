@@ -1,10 +1,14 @@
+def water_tile():
+	if get_water() < 0.7:
+		use_item(Items.Water)
+
 def for_each(callback):
 	for i in range(get_world_size()):
 		for j in range(get_world_size()):
 			callback()
+			water_tile()
 			move(North)
 		move(East)
-
 
 def till_map():
 	clear()
@@ -18,7 +22,7 @@ def carrots():
 			plant(Entities.Carrot)
 		elif get_entity_type() != Entities.Carrot:
 			plant(Entities.Carrot)
-	while num_items(Items.Wood) > 1 and num_items(Items.Hay) > 1:
+	while num_items(Items.Wood) >= 3 and num_items(Items.Hay) >= 3:
 		for_each(carrot)
 
 def can_plant_tree():
@@ -51,11 +55,23 @@ def hays():
 	while num_items(Items.Hay) < 1000:
 		for_each(hay)
 
+def pumpkins():
+	till_map()
+	def pumpkin():
+		if can_harvest():
+			harvest()
+			plant(Entities.Pumpkin)
+		elif get_entity_type() != Entities.Pumpkin:
+			plant(Entities.Pumpkin)
+	while num_items(Items.Carrot) >= 3:
+		for_each(pumpkin)
 
 while True:
-	if num_items(Items.Wood) > 1 and num_items(Items.Hay) > 1 and num_items(Items.Carrot) < 600:
+	if num_items(Items.Wood) > 100 and num_items(Items.Hay) > 1 and num_items(Items.Carrot) >= 600:
+		pumpkins()
+	elif num_items(Items.Wood) >= 3 and num_items(Items.Hay) >= 3 and num_items(Items.Carrot) < 600:
 		carrots()
-	elif num_items(Items.Hay) <= 1:
+	elif num_items(Items.Hay) <= 3:
 		hays()
 	else:
 		woods()
