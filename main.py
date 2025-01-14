@@ -5,7 +5,7 @@ HAY_MIN = 1000
 HAY_MAX = 2000
 
 def water_tile():
-	if get_water() < 0.7:
+	if get_water() < 0.9:
 		use_item(Items.Water)
 
 def for_each(callback):
@@ -28,7 +28,7 @@ def carrots():
 			plant(Entities.Carrot)
 		elif get_entity_type() != Entities.Carrot:
 			plant(Entities.Carrot)
-	while num_items(Items.Wood) >= 3 and num_items(Items.Hay) >= 3:
+	while num_items(Items.Wood) >= 3 and num_items(Items.Hay) >= HAY_MIN:
 		for_each(carrot)
 
 def can_plant_tree():
@@ -69,7 +69,7 @@ def pumpkins():
 			plant(Entities.Pumpkin)
 		elif get_entity_type() != Entities.Pumpkin:
 			plant(Entities.Pumpkin)
-	while num_items(Items.Carrot) >= 3:
+	while num_items(Items.Carrot) >= CARROT_MIN:
 		for_each(pumpkin)
 
 while True:
@@ -77,7 +77,7 @@ while True:
 		pumpkins()
 	elif num_items(Items.Wood) >= WOOD_MIN and num_items(Items.Hay) >= HAY_MIN and num_items(Items.Carrot) < CARROT_MIN:
 		carrots()
-	elif num_items(Items.Hay) <= 3:
+	elif num_items(Items.Hay) <= HAY_MIN:
 		hays()
 	else:
 		woods()
